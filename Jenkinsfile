@@ -8,7 +8,7 @@ node {
 
   stage("check tools") {
     sh "pwd"
-    sh "./gradlew --version"
+    sh "./gradlew --version --stacktrace"
   }
 
   stage("clean") {
